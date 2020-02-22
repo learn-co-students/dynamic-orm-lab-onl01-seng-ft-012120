@@ -1,5 +1,6 @@
 require 'sqlite3'
 
+
 DB = {:conn => SQLite3::Database.new("db/students.db")}
 DB[:conn].execute("DROP TABLE IF EXISTS students")
 
